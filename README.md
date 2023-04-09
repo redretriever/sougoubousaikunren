@@ -1,1 +1,2 @@
-# sougoubousaikunren
+# 総合防災訓練情報収集
+Custom Search JSON API を使用して「総合防災訓練」の情報を取得し、GASでスプレッドシートに記入する個人用ツールのソース。
