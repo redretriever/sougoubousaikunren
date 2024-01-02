@@ -157,6 +157,8 @@ function isTargetTitle(title) {
     var regex = new RegExp(eraName + '[2-' + (eraNameNum - 1) +']年', 'i');
     if (regex.test(title)) {
         return false;
+    } else if (title.indexOf("平成") >= 0) {
+        return false;
     } else {
         if (title.indexOf("しました") >= 0) {
             return false;
