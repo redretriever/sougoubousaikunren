@@ -141,7 +141,7 @@ function isExistsTitle(title, sheetData) {
 
 // 対象となるURLか判定（市町村などの公式サイト）
 function isTargetUrl(url) {
-    var regex = new RegExp('.*mlit.go.jp|.*pref.*jp|.*city.*jp|.*town.*jp|.*vill.*jp|.*fire.*jp|.*119.*jp|.*shobo.*jp|.*shoubou.*jp', 'i');
+    var regex = new RegExp('.*mlit.go.jp|.*pref.*jp|.*city.*jp|.*town.*jp|.*vill.*jp|.*lg.*jp|.*fire.*jp|.*119.*jp|.*shobo.*jp|.*shoubou.*jp', 'i');
     if (regex.test(url)) {
         return true;
     } else {
