@@ -123,19 +123,27 @@ function isset(data) {
 
 // すでに存在するか判定(URL)
 function isExistsUrl(url, sheetData) {
-    if (sheetData.getRange(3, 2, sheetData.getLastRow() - 2).getValues().flat().includes(url)) {
-        return true;
-    } else {
+    if ((sheetData.getLastRow() - 2) < 1 ) {
         return false;
+    } else {
+        if (sheetData.getRange(3, 2, sheetData.getLastRow() - 2).getValues().flat().includes(url)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 
 // すでに存在するか判定(タイトル)
 function isExistsTitle(title, sheetData) {
-    if (sheetData.getRange(3, 1, sheetData.getLastRow() - 2).getValues().flat().includes(title)) {
-        return true;
-    } else {
+    if ((sheetData.getLastRow() - 2) < 1 ) {
         return false;
+    } else {
+        if (sheetData.getRange(3, 1, sheetData.getLastRow() - 2).getValues().flat().includes(title)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
 
